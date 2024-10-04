@@ -14,7 +14,7 @@
     <!-- Contenedor Padre -->
     <div class="container_padre">
         <header>
-            <h1 style="font-size: 60px;">Gestion de horarios </h1>
+            <h1 style="titulongestio">Gestion de horarios </h1>
             <div class="container_perfil-encabezado">
                 <div class="perfil"></div>
                 Alvaro Acuña
@@ -34,15 +34,36 @@
             </ul>
 
         </div>
-         <div class="registro_horas">
-            <h2>Registrar Horas</h2>
-            <input type="text" id="idPersona" class="input_id" placeholder="ID de la persona" />
-            <input type="text" id="horas" class="input_horas" placeholder="Horas a registrar" />
-            <button id="registrarBtn" class="boton_registrar">Registrar</button>
-            <div id="resultado" class="resultado"></div>
-        </div>
+        <section class="section">
+            <h1 class="titulo">Actualizar Disponibilidad de Eventos</h1>
+            <p>Complete los campos a continuación para actualizar su disponibilidad</p>
+            <form class="Actualización" action="#" method="POST">
+                <label for="fecha-evento">Fecha del Evento:</label>
+                <input type="date" id="fecha-ev>ento" name="fecha-evento" required>
+
+                <label for="hora-inicio">Hora de Inicio:</label>
+                <input type="time" id="hora-inicio" name="hora-inicio" required>
+
+                <label for="hora-fin">Hora de Finalización:</label>
+                <input type="time" id="hora-fin" name="hora-fin" required>
+
+                <label for="dias-semana">Días Disponibles:</label>
+                <select id="dias-semana" name="dias-semana" multiple required>
+                    <option value="lunes">Lunes</option>
+                    <option value="martes">Martes</option>
+                    <option value="miercoles">Miércoles</option>
+                    <option value="jueves">Jueves</option>
+                    <option value="viernes">Viernes</option>
+                    <option value="sabado">Sábado</option>
+                    <option value="domingo">Domingo</option>
+                </select>
+
+                <button type="submit" class="btn primary">Actualizar Disponibilidad</button>
+
+            </form>
+        </section>
     </div>
-   
+
 </body>
 
 </html>
