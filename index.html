@@ -6,40 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body>
 
+    <!-- Encabezado -->
+    <header class="header">
+        <h1 class="titulo_de_la_pagina">Gestión de Horario</h1>
+    </header>
+
     <!-- Contenedor Padre -->
     <div class="container_padre">
-        <header>
-            <h1 style="titulongestio">Gestion de horarios </h1>
-            <div class="container_perfil-encabezado">
-                <div class="perfil"></div>
-                Alvaro Acuña
-                <div class="perfil"></div>
-                Mauricio Plaza 
-            </div>
 
-        </header>
-        <!-- contenedor Hijo1 -->
+        <!-- Menú lateral -->
         <div class="menulateral">
             <h1 class="menutitle">Menú</h1>
             <ul>
-                <li><i class="fa-solid fa-chart-pie"></i>Dashboard </li>
+                <li><i class="fa-solid fa-chart-pie"></i> Dashboard</li>
                 <li><i class="fa-solid fa-users"></i> Empleado</li>
-                <li><i class="fa-solid fa-calendar-days"></i> Calendario </li>
-
+                <li><i class="fa-solid fa-calendar-days"></i> Calendario</li>
             </ul>
-
         </div>
+
+        <!-- Sección principal -->
         <section class="section">
             <h1 class="titulo">Actualizar Disponibilidad de Eventos</h1>
             <p>Complete los campos a continuación para actualizar su disponibilidad</p>
             <form class="Actualización" action="#" method="POST">
                 <label for="fecha-evento">Fecha del Evento:</label>
-                <input type="date" id="fecha-ev>ento" name="fecha-evento" required>
+                <input type="date" id="fecha-evento" name="fecha-evento" required>
 
                 <label for="hora-inicio">Hora de Inicio:</label>
                 <input type="time" id="hora-inicio" name="hora-inicio" required>
@@ -59,7 +54,6 @@
                 </select>
 
                 <button type="submit" class="btn primary">Actualizar Disponibilidad</button>
-
             </form>
         </section>
     </div>
