@@ -17,7 +17,7 @@ body {
   width: 190px;
   height: auto;
   position: relative;
-  right: 170px; /* Ajuste de la posición del logo */
+  right: 230px; /* Ajuste de la posición del logo */
 }
 
 /* Estilos del encabezado */
@@ -36,7 +36,7 @@ body {
 
 /* Estilos del título animado de la página */
 .titulo_de_la_pagina {
-  animation: animar-texto 15s ease-in-out infinite; /* Animación infinita */
+  animation: animar-texto 7s ease-in-out infinite; /* Animación infinita */
   font-size: 60px;
   text-align: center;
   color: transparent;
@@ -197,4 +197,90 @@ select:focus {
 /* Efecto hover para el botón primario */
 .primary:hover {
   background-image: linear-gradient(to right, #9b87be, #e4b4ae);
+}
+.calendar-container {
+  margin-top: 20px; /* Espacio entre la sección y el calendario */
+  width: 100%; /* Asegura que ocupe todo el ancho disponible */
+  background-color: #fff; /* Fondo blanco para el calendario */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra para resaltar el calendario */
+}
+/* From Uiverse.io by guilhermeyohan */ 
+.form {
+  background-color: #fff;
+  position: relative;
+  width: 87%; /* Ocupa todo el ancho disponible */
+  height: 100%;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px auto;
+  margin-left: 180px; /* Margen para evitar solaparse con el menú lateral */
+}
+
+.lb {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.infos[type="text"], input[type="email"], input[type="date"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 20px;
+  background-color:#584037;
+  color: white;
+}
+
+#send {
+  --glow-color: #74615c;
+  --glow-spread-color: #866d65;
+  --enhanced-glow-color:  #EBCCC8;
+  --btn-color: #584037;
+  border: .25em solid var(--glow-color);
+  padding: 1em 2em;
+  color: var(--glow-color);
+  font-size: 14px;
+  font-weight: bold;
+  background-color: var(--btn-color);
+  border-radius: 1em;
+  outline: none;
+  box-shadow: 0 0 1em .25em var(--glow-color),
+        0 0 4em 1em var(--glow-spread-color),
+        inset 0 0 .05em .25em var(--glow-color);
+  text-shadow: 0 0 .5em var(--glow-color);
+  position: relative;
+  transition: all 0.3s;
+}
+
+#send::after {
+  pointer-events: none;
+  content: "";
+  position: absolute;
+  top: 120%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--glow-spread-color);
+  filter: blur(2em);
+  opacity: .7;
+  transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
+}
+
+#send:hover {
+  color: var(--btn-color);
+  background-color: var(--glow-color);
+  box-shadow: 0 0 1em .25em var(--glow-color),
+        0 0 4em 2em var(--glow-spread-color),
+        inset 0 0 .75em .25em var(--glow-color);
+}
+
+#send:active {
+  box-shadow: 0 0 0.6em .25em var(--glow-color),
+        0 0 2.5em 2em var(--glow-spread-color),
+        inset 0 0 .5em .25em var(--glow-color);
 }
