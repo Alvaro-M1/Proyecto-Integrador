@@ -78,8 +78,8 @@ body {
   width: 50px; /* Fijar el ancho del menú lateral */
   height: 100%; /* Ocupa toda la altura disponible */
   color: white;
-  position: sticky; /* Fijado en la parte izquierda */
-  top: 1px; /* Ajuste debajo del header */
+  position: fixed; /* Fijado en la parte izquierda */
+  top: 170px; /* Ajuste debajo del header */
   padding-top: 0px;
 }
 
@@ -215,7 +215,7 @@ select:focus {
   border-radius: 10px;
   padding: 20px;
   margin: 10px auto;
-  margin-left: 180px; /* Margen para evitar solaparse con el menú lateral */
+  margin-left: 130px; /* Margen para evitar solaparse con el menú lateral */
 }
 
 .lb {
