@@ -75,7 +75,7 @@ body {
 
 /* Menú lateral */
 .menulateral {
-  width: 50px; /* Fijar el ancho del menú lateral */
+  width: 150px; /* Aumentado de 50px para mejor visibilidad */
   height: 100%; /* Ocupa toda la altura disponible */
   color: white;
   position: fixed; /* Fijado en la parte izquierda */
@@ -210,12 +210,14 @@ select:focus {
 .form {
   background-color: #fff;
   position: relative;
-  width: 87%; /* Ocupa todo el ancho disponible */
-  height: 100%;
-  border-radius: 10px;
-  padding: 20px;
+  width: 100%; /* Cambiado de 87% */
+  max-width: 1250px; /* Añadido un ancho máximo */
   margin: 10px auto;
-  margin-left: 130px; /* Margen para evitar solaparse con el menú lateral */
+  padding: 20px;
+  left: 65px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra alrededor de la sección */
+  flex: 1;
 }
 
 .lb {
@@ -225,7 +227,7 @@ select:focus {
   font-weight: bold;
 }
 
-.infos[type="text"], input[type="email"], input[type="date"] {
+input[type="text"], input[type="email"], input[type="date"] {
   width: 100%;
   padding: 10px;
   font-size: 16px;

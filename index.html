@@ -58,39 +58,42 @@
             </form>
         </section>
         
-    </div class="asignacion">
+    </div>
+
+    <div class="asignacion">
+        <!-- From Uiverse.io by guilhermeyohan -->
+        <form class="form">
+            <h1 class="titulo_de_la_pagina">Asignación de tareas en el calendario</h1>
+            <label class="lb" for="nome">Name:</label>
+            <input name="nome" id="nome" type="text" class="infos">
     
-    /* From Uiverse.io by guilhermeyohan */ 
-    <form class="form">
-        <h1 class="titulo_de_la_pagina">Asignación de tareas en el calendario</h1>
-    <label class="lb" for="nome">Name:</label>
-          <input name="nome" id="nome" type="text" class="infos">
+            <label for="dias-disponibles">Días Disponibles:</label>
+            <select id="dias-disponibles" name="dias-disponibles" multiple required>
+                <option value="lunes">Lunes</option>
+                <option value="martes">Martes</option>
+                <option value="miercoles">Miércoles</option>
+                <option value="jueves">Jueves</option>
+                <option value="viernes">Viernes</option>
+                <option value="sabado">Sábado</option>
+                <option value="domingo">Domingo</option>
+            </select>
+
+            <label for="tareas-disponibles">tareas disponibles</label>
+            <select id="tareas-disponibles" name="tareas-disponibles" multiple required>
+                <option value="lunes">html</option>
+                <option value="martes">css</option>
+                <option value="miercoles">java</option>
+                <option value="jueves">javascript</option>
+                <option value="viernes">next.js</option>
+                
+            </select>
+            
+            <label for="data" class="lb">Date:</label>
+            <input name="data" id="data" type="date" class="infos">
     
-          <label for="dias-semana">Días Disponibles:</label>
-                <select id="dias-semana" name="dias-semana" multiple required>
-                    <option value="lunes">Lunes</option>
-                    <option value="martes">Martes</option>
-                    <option value="miercoles">Miércoles</option>
-                    <option value="jueves">Jueves</option>
-                    <option value="viernes">Viernes</option>
-                    <option value="sabado">Sábado</option>
-                    <option value="domingo">Domingo</option>
-                </select>
-                <label for="dias-semana">tareas disponibles</label>
-                <select id="dias-semana" name="dias-semana" multiple required>
-                    <option value="lunes">html</option>
-                    <option value="martes">css</option>
-                    <option value="miercoles">java</option>
-                    <option value="jueves">javascript</option>
-                    <option value="viernes">next.js</option>
-                    
-                </select>
-          <label for="data" class="lb">Date:</label>
-          <input name="data" id="data" type="date" class="infos">
-    
-          <button id="send" type="submit">Send</button>
-         
+            <button id="send" type="submit">Send</button>
         </form>
+    </div>
 </body>
 
 </html>
